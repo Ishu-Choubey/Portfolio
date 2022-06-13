@@ -33,8 +33,8 @@ p {
 	letter-spacing: 0.05rem;
 }
 .section-title {
-	font-size: 4rem;
-	font-weight: 300;
+	font-size: 7rem;
+	font-weight: bolder;
 	color: black;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -265,6 +265,14 @@ p {
 /* End Hero Section */
 
 /* Skillset Section */
+
+.skillbg{
+    background: url(img/skillbg1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
 #skillset .services {
 	flex-direction: column;
 	text-align: center;
@@ -327,6 +335,15 @@ p {
 /* End Services Section */
 
 /* Projects section */
+
+#projects
+{
+    background: url(img/projbg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
 #projects .projects {
 	max-height: 5000px;
 	max-width: 1200px;
@@ -388,7 +405,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #26282c 0%, #2c3034 100%);
+	background-image: linear-gradient(60deg, #202021 0%, #0f0f0f 100%);
 	opacity: 0.7;
 }
 #projects .project-img img {
@@ -523,6 +540,15 @@ p {
 /* End About Section */
 
 /* contact Section */
+
+#contact
+{
+    background: url(img/conbg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -544,26 +570,28 @@ p {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
+	box-shadow: 0px 0px 18px 0 rgb(81, 79, 79);
 	transition: 0.3s ease box-shadow;
 }
 #contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
+	box-shadow: 0px 0px 5px 0 #ffffff2c;
 }
 #contact .icon {
-	width: 70px;
+	width: 80px;
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
-#contact .contact-info h1 {
-	font-size: 2.5rem;
+#contact .contact-info h1 a{
+	font-size: 2.25rem;
 	font-weight: 500;
 	margin-bottom: 5px;
+	color: #fff;
 }
-#contact .contact-info h2 {
-	font-size: 1.3rem;
+#contact .contact-info h2 a{
+	font-size: 1.5rem;
 	line-height: 2rem;
 	font-weight: 500;
+	color: #fff;
 }
 /*End contact Section */
 
@@ -785,8 +813,7 @@ p {
 /* Experience Section */
 #Experience .services {
 	flex-direction: column;
-	text-align: center;
-	max-width: 1500px;
+	max-width: 500px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
@@ -802,18 +829,16 @@ p {
 	margin-top: 50px;
 }
 #Experience .service-item {
-	flex-basis: 50%;
+	flex-basis: 25%;
 	display: flex;
-	align-items: flex-start;
-	justify-content: center;
+	align-items: flex-start;;
 	flex-direction: column;
 	padding: 30px;
-	border-radius: 10px;
+	border-radius: 5px;
 	background-image: url(./img/img-1.png);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
-	z-index: 1;
 	overflow: hidden;
 }
 #Experience .service-item::after {
@@ -837,11 +862,9 @@ p {
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
-	text-align: center;
 }
 #Experience .service-item p {
-	color: white;
-	text-align: center;
+	color: white;font-weight: semibold;
 }
 /* End Experience Section */
 
